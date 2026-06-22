@@ -58,3 +58,7 @@
     * [File Upload Vulnerabilities Checklist](./bug-bounty/attack/server/FILE-UPLOAD.md)
     * [Information Disclosure Checklist](./bug-bounty/attack/server/INFORMATION-DISCLOSURE.md)
     * [Path Traversal / LFI Checklist](./bug-bounty/attack/server/PATH-TRAVERSAL.md)
+
+* **Other**
+  * **Web Development**
+  * [Clickjacking Testing Checklist](./other/web-dev/GithubPages.md)
