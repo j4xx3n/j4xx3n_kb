@@ -1,9 +1,5 @@
 * [Home](/)
 
 * **Bug Bounty Checklist**
-  * [Overview](/bug-bounty/)
-  * [Reconnaissance](/bug-bounty/recon)
+  * [Overview](/bug-bounty/index)
   * [Attack](/bug-bounty/attack)
-
-* **PortSwigger Lab Guides**
-  * [Overview](/portswigger/)
