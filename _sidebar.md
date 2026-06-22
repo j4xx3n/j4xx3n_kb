@@ -1,5 +1,5 @@
-* [Home](/)
+* [Home](./)
 
 * **Bug Bounty Checklist**
-  * [Overview](/bug-bounty/index)
-  * [Attack](/bug-bounty/attack)
+  * [Overview](./bug-bounty/index)
+  * [Attack](./bug-bounty/attack)
