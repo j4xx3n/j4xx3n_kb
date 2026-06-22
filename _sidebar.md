@@ -3,12 +3,13 @@
 * **PortSwigger Lab Guides**
 
   * **Client Side Labs**
-  * [Clickjacking](./portswigger/client/clickjack.md)
-  * [Cross-Origin Resource Sharing (CORS)](./portswigger/client/cors.md)
-  * [Cross-Site Request Forgery (CSRF)](./portswigger/client/csrf.md)
-  * [DOM-Based Vulnerabilities](./portswigger/client/dom.md)
-  * [WebSockets](./portswigger/client/webSockets.md)
-  * [Cross-Site Scripting (XSS)](./portswigger/client/xss.md)
+    * **Client Side Labs**
+    * [Clickjacking](./portswigger/client/clickjack.md)
+    * [Cross-Origin Resource Sharing (CORS)](./portswigger/client/cors.md)
+    * [Cross-Site Request Forgery (CSRF)](./portswigger/client/csrf.md)
+    * [DOM-Based Vulnerabilities](./portswigger/client/dom.md)
+    * [WebSockets](./portswigger/client/webSockets.md)
+    * [Cross-Site Scripting (XSS)](./portswigger/client/xss.md)
 
   * **Server Side Labs**
   * [API Testing](./portswigger/server/api.md)
