@@ -1,5 +1,22 @@
-# Welcome to My Knowledge Base
+# Knowledge Base Directory
 
-Select a category below to get started:
+A personal reference hub for offensive web security and bug bounty research.
 
-[Bug Bounty Checklist](/#/bug-bounty/index) | [PortSwigger Lab Guides](/#/portswigger/) | [Other](/#/other/)
+<div class="kb-card">
+  <h2>Welcome to My Knowledge Base</h2>
+  <p style="max-width: 36rem; margin: 0 auto 1.8rem; color: #b9c2cc; line-height: 1.65;">
+    Field-tested methodology, reusable tooling notes, and worked lab solutions &mdash;
+    the things I reach for during recon, testing, and reporting, organized so I can
+    find them fast and keep them sharp.
+  </p>
+  <div class="kb-buttons">
+    <a href="#/checklist">Bug Bounty Checklist</a>
+    <a href="#/portswigger">PortSwigger Lab Guides</a>
+  </div>
+</div>
+
+---
+
+<p style="text-align:center; color:#8b949e; font-size:0.85rem; margin-top:2rem;">
+  Maintained by <strong>J4xx3n</strong> &middot; Web application security &amp; bug bounty
+</p>
