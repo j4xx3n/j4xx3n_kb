@@ -9,10 +9,6 @@ A personal reference hub for offensive web security and bug bounty research.
     the things I reach for during recon, testing, and reporting, organized so I can
     find them fast and keep them sharp.
   </p>
-  <div class="kb-buttons">
-    <a href="#/checklist">Bug Bounty Checklist</a>
-    <a href="#/portswigger">PortSwigger Lab Guides</a>
-  </div>
 </div>
 
 ---
