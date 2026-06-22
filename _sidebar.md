@@ -19,6 +19,6 @@
     * [CSRF Checklist](./bug-bounty/attack/client/CSRF.md)
     * [DOM-Based Vulnerabilities Checklist](./bug-bounty/attack/client/DOM.md)
     * [Open Redirect Checklist](./bug-bounty/attack/client/OPEN-REDIRECT.md)
-    * **Server Side Attack** * [Server Side Attack](/bug-bounty/recon-passive)
+    * **Server Side Attack**
     * [SS Attack](./bug-bounty/attack)
 
