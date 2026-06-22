@@ -2,7 +2,7 @@
 
 * **PortSwigger Lab Guides**
   * **Client Side Labs**
-    * **Client Side Labs**
+    * ****
     * [Clickjacking](./portswigger/client/clickjack.md)
     * [Cross-Origin Resource Sharing (CORS)](./portswigger/client/cors.md)
     * [Cross-Site Request Forgery (CSRF)](./portswigger/client/csrf.md)
@@ -10,7 +10,7 @@
     * [WebSockets](./portswigger/client/webSockets.md)
     * [Cross-Site Scripting (XSS)](./portswigger/client/xss.md)
   * **Server Side Labs**
-    * **Server Side Labs**
+    * ****
     * [API Testing](./portswigger/server/api.md)
     * [Authentication](./portswigger/server/auth.md)
     * [Access Control](./portswigger/server/bac.md)
@@ -24,7 +24,7 @@
     * [Web Cache Deception](./portswigger/server/webCache.md)
     * [XXE Injection](./portswigger/server/xxe.md)
   * **Advanced Labs**
-    * **Advanced Labs**
+    * ****
     * [Insecure Deserialization](./portswigger/advanced/deserialization.md)
     * [GraphQL API Vulnerabilities](./portswigger/advanced/gql.md)
     * [HTTP Host Header Attacks](./portswigger/advanced/hostHeader.md)
