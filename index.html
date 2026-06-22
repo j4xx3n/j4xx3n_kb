@@ -12,29 +12,62 @@
 
   <style>
     :root {
-      /* Clean, modern sans-serif font stack */
       --base-font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       --code-font-family: 'Fira Code', 'Ubuntu Mono', Monaco, monospace;
       
-      /* Sharp cyber-blue accent color for links, buttons, and active states */
+      /* Matching the vibrant teal accent from your background image */
       --theme-color: #00b4d8; 
       
-      /* Sidebar panel styling for sleek dark contrast */
-      --sidebar-width: 18rem;
-      --sidebar-background: #161b22; 
-      --content-max-width: 55rem;
+      --sidebar-width: 19rem;
+      --content-max-width: 60rem;
     }
-    
-    /* Technical styling adjustments for embedded code blocks */
+
+    /* Fixed Fullscreen Background Image */
+    body {
+      background: url('bg.jpg') no-repeat center center fixed !important;
+      background-size: cover !important;
+    }
+
+    /* Frosted Glass Sidebar */
+    section.sidebar {
+      background: rgba(13, 17, 23, 0.75) !important;
+      backdrop-filter: blur(15px) webkit-backdrop-filter: blur(15px);
+      border-right: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* Translucent Main App Container */
+    main {
+      background: transparent !important;
+    }
+
+    /* Frosted Glass Reading Section */
+    .markdown-section {
+      background: rgba(22, 27, 34, 0.8) !important;
+      backdrop-filter: blur(12px) webkit-backdrop-filter: blur(12px);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 2.5rem !important;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      margin-top: 2rem;
+    }
+
+    /* Clean styling for code elements over the glass background */
     code {
-      background-color: #21262d !important;
+      background-color: rgba(33, 38, 45, 0.9) !important;
       color: #ff7b72 !important;
       border-radius: 6px;
       padding: 0.2rem 0.4rem !important;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    pre {
+      background-color: rgba(22, 27, 34, 0.9) !important;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
     }
     pre code {
       color: #c9d1d9 !important;
       padding: 1rem !important;
+      background: transparent !important;
     }
   </style>
 </head>
@@ -46,7 +79,7 @@
       repo: 'https://github.com/j4xx3n/j4xx3n_kb',
       loadSidebar: true, 
       subMaxLevel: 2,
-      sidebarDisplayLevel: 0, // 0 collapses all nested folder subcategories by default
+      sidebarDisplayLevel: 0,
       
       themeable: {
           readyTransition : true,
