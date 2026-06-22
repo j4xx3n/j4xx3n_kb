@@ -1,4 +1,4 @@
-# Knowledge Base Directory
+# J4xx3n's Knowledge Base
 
 A personal reference hub for offensive web security and bug bounty research.
 
