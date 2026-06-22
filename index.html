@@ -24,6 +24,10 @@
       --glow: rgba(0, 180, 216, 0.65);
       --glow-soft: rgba(0, 180, 216, 0.30);
 
+      /* Neon blue hover accent */
+      --neon: #00e5ff;
+      --neon-glow: rgba(0, 229, 255, 0.55);
+
       /* Frosted surfaces */
       --panel-bg: rgba(13, 17, 23, 0.72);
       --card-bg: rgba(22, 27, 34, 0.80);
@@ -36,18 +40,6 @@
       background: url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=2400&auto=format&fit=crop') no-repeat center center fixed !important;
       background-size: cover !important;
       color: #c9d1d9;
-    }
-
-    /* Outer glowing teal frame around the whole window */
-    body::after {
-      content: "";
-      position: fixed;
-      inset: 14px;
-      border: 1px solid var(--glow);
-      border-radius: 14px;
-      box-shadow: 0 0 22px var(--glow-soft), inset 0 0 22px rgba(0, 180, 216, 0.10);
-      pointer-events: none;
-      z-index: 2147483000;
     }
 
     /* Decorative sparkle, bottom-right.
@@ -124,7 +116,10 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
-    .sidebar .kb-repo:hover { background: #2bc7e8; }
+    .sidebar .kb-repo:hover {
+      background: var(--neon);
+      box-shadow: 0 0 14px var(--neon-glow);
+    }
 
     /* Frosted glass reading card (content pages) */
     .markdown-section {
@@ -198,9 +193,20 @@
     }
     .kb-buttons a:hover,
     .kb-button:hover {
-      background: #2bc7e8;
-      box-shadow: 0 0 16px var(--glow-soft);
+      background: var(--neon);
+      box-shadow: 0 0 18px var(--neon-glow);
       transform: translateY(-1px);
+    }
+
+    /* Neon-blue hover for sidebar nav links and in-content links */
+    .sidebar nav a:hover,
+    .sidebar ul li a:hover {
+      color: var(--neon) !important;
+      text-shadow: 0 0 8px var(--neon-glow);
+    }
+    .markdown-section a:not(.kb-button):hover {
+      color: var(--neon) !important;
+      text-shadow: 0 0 8px var(--neon-glow);
     }
 
     /* Code styling over the glass background */
