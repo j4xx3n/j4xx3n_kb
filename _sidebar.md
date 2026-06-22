@@ -1,7 +1,6 @@
 * [Home](./)
 
 * **PortSwigger Lab Guides**
-
   * **Client Side Labs**
     * **Client Side Labs**
     * [Clickjacking](./portswigger/client/clickjack.md)
@@ -10,31 +9,29 @@
     * [DOM-Based Vulnerabilities](./portswigger/client/dom.md)
     * [WebSockets](./portswigger/client/webSockets.md)
     * [Cross-Site Scripting (XSS)](./portswigger/client/xss.md)
-
   * **Server Side Labs**
-  * [API Testing](./portswigger/server/api.md)
-  * [Authentication](./portswigger/server/auth.md)
-  * [Access Control](./portswigger/server/bac.md)
-  * [Business Logic Vulnerabilities](./portswigger/server/buisnessLogic.md)
-  * [Command Injection](./portswigger/server/commandInjection.md)
-  * [File Upload Vulnerabilities](./portswigger/server/fileUpload.md)
-  * [Information Disclosure](./portswigger/server/infoDisclo.md)
-  * [Path Traversal](./portswigger/server/lfi.md)
-  * [SQL Injection](./portswigger/server/sqli.md)
-  * [Server-Side Request Forgery (SSRF)](./portswigger/server/ssrf.md)
-  * [Web Cache Deception](./portswigger/server/webCache.md)
-  * [XXE Injection](./portswigger/server/xxe.md)
-
+    * **Server Side Labs**
+    * [API Testing](./portswigger/server/api.md)
+    * [Authentication](./portswigger/server/auth.md)
+    * [Access Control](./portswigger/server/bac.md)
+    * [Business Logic Vulnerabilities](./portswigger/server/buisnessLogic.md)
+    * [Command Injection](./portswigger/server/commandInjection.md)
+    * [File Upload Vulnerabilities](./portswigger/server/fileUpload.md)
+    * [Information Disclosure](./portswigger/server/infoDisclo.md)
+    * [Path Traversal](./portswigger/server/lfi.md)
+    * [SQL Injection](./portswigger/server/sqli.md)
+    * [Server-Side Request Forgery (SSRF)](./portswigger/server/ssrf.md)
+    * [Web Cache Deception](./portswigger/server/webCache.md)
+    * [XXE Injection](./portswigger/server/xxe.md)
   * **Advanced Labs**
-  * [Insecure Deserialization](./portswigger/advanced/deserialization.md)
-  * [GraphQL API Vulnerabilities](./portswigger/advanced/gql.md)
-  * [HTTP Host Header Attacks](./portswigger/advanced/hostHeader.md)
-  * [JWT Attacks](./portswigger/advanced/jwt.md)
-  * [Prototype Pollution](./portswigger/advanced/prototypePollution.md)
-  * [Server-Side Template Injection](./portswigger/advanced/ssti.md)
-  * [Web Cache Poisoning](./portswigger/advanced/webCachePoison.md)
-
-
+    * **Advanced Labs**
+    * [Insecure Deserialization](./portswigger/advanced/deserialization.md)
+    * [GraphQL API Vulnerabilities](./portswigger/advanced/gql.md)
+    * [HTTP Host Header Attacks](./portswigger/advanced/hostHeader.md)
+    * [JWT Attacks](./portswigger/advanced/jwt.md)
+    * [Prototype Pollution](./portswigger/advanced/prototypePollution.md)
+    * [Server-Side Template Injection](./portswigger/advanced/ssti.md)
+    * [Web Cache Poisoning](./portswigger/advanced/webCachePoison.md)
 
 * **Bug Bounty Checklist**
   * **Reconnaissance**
@@ -61,7 +58,3 @@
     * [File Upload Vulnerabilities Checklist](./bug-bounty/attack/server/FILE-UPLOAD.md)
     * [Information Disclosure Checklist](./bug-bounty/attack/server/INFORMATION-DISCLOSURE.md)
     * [Path Traversal / LFI Checklist](./bug-bounty/attack/server/PATH-TRAVERSAL.md)
-
-
-
-
