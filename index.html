@@ -49,22 +49,6 @@
       color: #c9d1d9;
     }
 
-    /* Decorative sparkle, bottom-right.
-       (This matches the screenshot, but it may just be a mockup watermark —
-       delete this whole body::before rule if you don't want it.) */
-    body::before {
-      content: "";
-      position: fixed;
-      right: 46px;
-      bottom: 44px;
-      width: 34px;
-      height: 34px;
-      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23dff3fb' d='M12 0c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12 7-1 11-5 12-12z'/%3E%3C/svg%3E") no-repeat center / contain;
-      opacity: 0.40;
-      pointer-events: none;
-      z-index: 2147483001;
-    }
-
     /* Translucent main app container */
     main { background: transparent !important; }
 
