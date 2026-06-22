@@ -1,7 +1,7 @@
 * [Home](./)
 
 * **Bug Bounty Checklist**
-  * **Reconnaissance** [Recon](/bug-bounty/recon-passive)
+  * **Reconnaissance**
   * [Bug Bounty Program Selection Checklist](./bug-bounty/recon/0-PROGRAM.md)
   * [Root Domain Discovery Checklist](./bug-bounty/recon/1-DOMAINS.md)
   * [Subdomain Enumeration Checklist](./bug-bounty/recon/2-SUBDOMAINS.md)
@@ -9,6 +9,9 @@
   * [Hidden Parameter Discovery Checklist](./bug-bounty/recon/4-HIDDEN-PARAMETERS.md)
   * **Attack** * [Attack](/bug-bounty/recon-passive)
   * **Client Side Attack** * [Client Side Attack](/bug-bounty/recon-passive)
+    * **Cross Site Scripting**
+    * [Bug Bounty Program Selection Checklist](./bug-bounty/recon/0-PROGRAM.md)
+    * [Bug Bounty Program Selection Checklist](./bug-bounty/recon/0-PROGRAM.md)
   * [Clickjacking Testing Checklist](./bug-bounty/attack/client/CLICKJACKING.md)
   * [CORS Testing Checklist](./bug-bounty/attack/client/CORS.md)
   * [Client-Side Path Traversal (CSPT) Checklist](./bug-bounty/attack/client/CSPT.md)
