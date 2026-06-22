@@ -33,12 +33,19 @@
       --card-bg: rgba(22, 27, 34, 0.80);
     }
 
-    html, body { height: 100%; }
+    html { min-height: 100%; }
 
-    /* Fixed fullscreen background image */
+    /* Pre-baked mirror tile (photo stacked on a vertically-flipped copy of itself).
+       Tiling it vertically means every seam meets its own mirror image, so the
+       repeat is effectively invisible. Background scrolls with the page. */
     body {
-      background: url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=2400&auto=format&fit=crop') no-repeat center center fixed !important;
-      background-size: cover !important;
+      min-height: 100vh;
+      background-color: #0a0e12 !important;
+      background-image: url('bg-tile.jpg') !important;
+      background-repeat: repeat-y !important;
+      background-size: 100% auto !important;
+      background-position: top center !important;
+      background-attachment: scroll !important;
       color: #c9d1d9;
     }
 
