@@ -17,7 +17,10 @@
       /* Vibrant teal accent from the background image */
       --theme-color: #00b4d8;
 
-      --sidebar-width: 21rem;
+      /* Draggable sidebar width. --sidebar-width (the content offset docsify
+         reads) is derived from it: ~34px left inset + width + ~30px gap. */
+      --kb-sidebar-w: 17rem;
+      --sidebar-width: calc(var(--kb-sidebar-w) + 4rem);
       --content-max-width: 60rem;
 
       /* Glow accents */
@@ -60,12 +63,42 @@
       top: 34px;
       bottom: 34px;
       left: 34px;
-      width: 17rem;
+      width: var(--kb-sidebar-w);
       border: 1px solid var(--glow);
       border-radius: 12px;
       box-shadow: 0 0 18px var(--glow-soft);
       overflow-x: hidden;
     }
+
+    /* Drag handle on the sidebar's right edge */
+    .kb-resizer {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 10px;
+      height: 100%;
+      cursor: ew-resize;
+      z-index: 50;
+      touch-action: none;
+    }
+    .kb-resizer::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 2px;
+      transform: translateY(-50%);
+      width: 3px;
+      height: 42px;
+      border-radius: 3px;
+      background: rgba(255, 255, 255, 0.18);
+      transition: background 0.15s ease, box-shadow 0.15s ease;
+    }
+    .kb-resizer:hover::after,
+    body.kb-resizing .kb-resizer::after {
+      background: var(--neon);
+      box-shadow: 0 0 10px var(--neon-glow);
+    }
+    body.kb-resizing { cursor: ew-resize; -webkit-user-select: none; user-select: none; }
 
     /* Search box (requires the search plugin, loaded below) */
     .sidebar .search {
@@ -255,5 +288,69 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+
+  <!-- Makes the sidebar horizontally resizable via a drag handle on its right edge.
+       Double-click the handle to reset; width persists across reloads. -->
+  <script>
+    (function () {
+      var MIN = 180, MAX = 560;            // px clamp
+      var root = document.documentElement;
+
+      try {
+        var saved = localStorage.getItem('kbSidebarWidth');
+        if (saved) root.style.setProperty('--kb-sidebar-w', saved);
+      } catch (e) {}
+
+      function init() {
+        var sidebar = document.querySelector('section.sidebar');
+        if (!sidebar) { return setTimeout(init, 150); }
+        if (sidebar.querySelector('.kb-resizer')) return;
+
+        var handle = document.createElement('div');
+        handle.className = 'kb-resizer';
+        handle.title = 'Drag to resize · double-click to reset';
+        sidebar.appendChild(handle);
+
+        var dragging = false;
+
+        function setWidth(clientX) {
+          var w = clientX - sidebar.getBoundingClientRect().left;
+          w = Math.max(MIN, Math.min(MAX, w));
+          root.style.setProperty('--kb-sidebar-w', w + 'px');
+        }
+        function start(e) {
+          dragging = true;
+          document.body.classList.add('kb-resizing');
+          if (e.cancelable) e.preventDefault();
+        }
+        function stop() {
+          if (!dragging) return;
+          dragging = false;
+          document.body.classList.remove('kb-resizing');
+          try { localStorage.setItem('kbSidebarWidth', getComputedStyle(sidebar).width); } catch (e) {}
+        }
+
+        handle.addEventListener('mousedown', start);
+        handle.addEventListener('touchstart', start, { passive: false });
+        document.addEventListener('mousemove', function (e) { if (dragging) { setWidth(e.clientX); } });
+        document.addEventListener('touchmove', function (e) {
+          if (dragging && e.touches[0]) { setWidth(e.touches[0].clientX); if (e.cancelable) e.preventDefault(); }
+        }, { passive: false });
+        document.addEventListener('mouseup', stop);
+        document.addEventListener('touchend', stop);
+
+        handle.addEventListener('dblclick', function () {
+          root.style.removeProperty('--kb-sidebar-w');
+          try { localStorage.removeItem('kbSidebarWidth'); } catch (e) {}
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 </body>
 </html>
