@@ -32,6 +32,23 @@
     * [Prototype Pollution](./portswigger/advanced/prototypePollution.md)
     * [Server-Side Template Injection](./portswigger/advanced/ssti.md)
     * [Web Cache Poisoning](./portswigger/advanced/webCachePoison.md)
+  * **Mystery Labs** 
+    * **---** 
+    * [Business Logic Mystery](./portswigger/mystery/BusinessLogicMystery.md)
+    * [Clickjacking Mystery](./portswigger/mystery/ClickjackingMystery.md)    
+    * [Command Injection Mystery](./portswigger/mystery/CommandInjectionMystery.md)
+    * [CORS Mystery](./portswigger/mystery/CORSMystery.md)
+    * [CSRF Mystery](./portswigger/mystery/CSRFMystery.md)
+    * [Deserialization Mystery](./portswigger/mystery/DeserializationMystery.md)
+    * [DOM Mystery](./portswigger/mystery/DOMMystery.md)
+    * [File Upload Mystery](./portswigger/mystery/FileUploadMystery.md)
+    * [JWT Mystery](./portswigger/mystery/JWTMystery.md)
+    * [LFI Mystery](./portswigger/mystery/LFIMystery.md)
+    * [SSRF Mystery](./portswigger/mystery/SSRFMystery.md)
+    * [SSTI Mystery](./portswigger/mystery/SSTIMystery.md)
+    * [Web Socket Mystery](./portswigger/mystery/WebSocketMystery.md)
+    * [XSS Mystery](./portswigger/mystery/XSSMystery.md)
+    * [XXE Mystery](./portswigger/mystery/XXEMystery.md)
 
 * **Bug Bounty Checklist**
   * **Reconnaissance**
@@ -58,7 +75,6 @@
     * [File Upload Vulnerabilities Checklist](./bug-bounty/attack/server/FILE-UPLOAD.md)
     * [Information Disclosure Checklist](./bug-bounty/attack/server/INFORMATION-DISCLOSURE.md)
     * [Path Traversal / LFI Checklist](./bug-bounty/attack/server/PATH-TRAVERSAL.md)
-
 * **Other**
   * **Web Development**
   * [This Site (Github Pages)](./other/web-dev/GithubPages.md)
