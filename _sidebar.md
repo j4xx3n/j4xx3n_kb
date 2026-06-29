@@ -1,5 +1,5 @@
 * [Home](./)
-* [About Me](./Other/aboutMe.md)
+* [About Me](./other/aboutMe.md)
 
 * **PortSwigger Lab Guides**
   * **Client Side Labs**
